@@ -3,7 +3,7 @@ import openai
 import streamlit as st
 
 # Set the OpenAI API key and the GPT-3.5-Turbo model engine
-openai.api_key = "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"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 model_engine = "gpt-3.5-turbo"
 
 # Define a function to generate responses using GPT-3.5-Turbo
